@@ -1,0 +1,1975 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>my-project</title>
+  </head>
+  <body class="bg-amber-50 dark:bg-black font-font-ja">
+    <div class="continer w-[93%] md:w-[92%] lg:w-[91%] mx-auto">
+<!-- هدر اصلی سایت -->
+<header class="site-header w-full mt-8">
+
+    <!-- نوار ناوبری -->
+    <nav class="navbar
+      flex flex-row justify-between sm:items-center items-start
+    ">
+
+        <!-- بخش سمت چپ هدر -->
+        <div class="navbar-left flex max-[480px]:flex-col sm:flex-row sm:items-center gap-x-[clamp(12px,3vw,40px)] gap-y-4">
+
+            <!-- لوگوی سایت -->
+            <div class="navbar-logo">
+                <span id="theme-toggle" class="navbar-logo-text
+                 font-font-ja text-blue-500 text-[clamp(26px,2.2vw,40px)] font-bold
+                 cursor-pointer
+                 ">MORENT</span>
+            </div>
+
+            <!-- کادر جست‌وجو -->
+            <div class="navbar-search relative">
+
+                <!-- آیکون جست‌وجو -->
+                <i
+                    class="ri-search-line absolute text-[20px] right-3 top-1/2 -translate-y-1/2
+                    text-gray-600 dark:text-gray-400
+                    pointer-events-none"
+                ></i>
+
+                <!-- ورودی جست‌وجو -->
+                <input
+                    type="search"
+                    class="navbar-search-input w-[clamp(300px,28vw,550px)]
+                    max-[350px]:w-[230px]
+                    rounded-[30px] border border-transparent
+                    bg-gray-100 px-4 py-1.5 pr-10
+                    text-gray-900 outline-none
+                    transition-all duration-300 ease-in-out
+                    focus:bg-white
+                    focus:border-gray-400
+                    focus:ring-3 focus:ring-gray-200/70
+                    focus:shadow-md
+                    dark:bg-white/5 dark:text-white
+                    dark:focus:bg-white/10
+                    dark:focus:border-white/15
+                    dark:focus:ring-white/10
+                    dark:focus:shadow-lg dark:focus:shadow-black/10"
+                    placeholder="Search..."
+                >
+
+            </div>
+        </div>
+
+        <!-- بخش سمت راست هدر -->
+        <div class="navbar-right flex gap-8 items-center">
+
+            <!-- آیکون علاقه‌مندی‌ها -->
+            <i class="ri-heart-fill hidden md:block text-[26px] text-[#596780]"></i>
+
+            <!-- آیکون اعلان‌ها -->
+            <i class="ri-notification-fill hidden md:block text-[26px] text-[#596780]"></i>
+
+            <!-- آیکون تنظیمات -->
+            <i class="ri-settings-4-fill hidden md:block text-[26px] text-[#596780]"></i>
+
+            <!-- تصویر پروفایل -->
+            <img
+                src="src/assets/Image.svg"
+                alt="Profile"
+                class="navbar-profile-image w-[clamp(35px,3vw,100px)]"
+            >
+
+        </div>
+    </nav>
+</header>
+<!-- بخش اصلی صفحه -->
+<main class="main-content mt-[clamp(20px,4vw,100px)]">
+
+    <!-- باکس‌های بالایی -->
+    <section class="main-top-box 
+        grid grid-cols-1 sm:grid-cols-2 gap-[clamp(10px,2.2vw,50px)] 
+        max-sm:flex max-sm:overflow-x-auto
+        mx-auto
+        max-sm:snap-x max-sm:snap-mandatory
+        max-sm:scroll-smooth max-sm:overscroll-x-contain
+        max-sm:[scrollbar-width:none]
+        ">
+
+        <!-- باکس اول -->
+        <div class="top-box-one bg 
+            max-sm:flex-none max-sm:w-full 
+            max-sm:snap-start">
+            <!-- محتوای باکس اول -->
+            <div class="box-content w-full p-[clamp(6px,1.3vw,20px)]">
+                <h2 class="font-semibold  text-white text-[clamp(16px,2.2vw,40px)]" >The Best Platform <br class="hidden sm:block"> for Car Rental</h2>
+                <p class="text-white pt-[clamp(13px,1.4vw,25px)] pb-[clamp(17px,1.4vw,25px)] text-[clamp(14px,1.2vw,20px)]">Ease of doing a car rental safely and <br> reliably. Of course at a low price.</p>
+                <a href="Category Car Rent.html">
+                <span class="px-[20px] py-[10px]  text-[16px] rounded-[5px] text-amber-50 bg-[#3563E9]">Rental Car</span>
+                </a>
+            </div>
+            <div class="image-box w-[50%] m-auto mt-4 ">
+            <!-- تصویر باکس اول -->
+            <img class="w-[100%] " src="src/assets/image 7.svg" alt="Car">
+            </div>
+        </div>
+
+        <!-- باکس دوم -->
+        <div class="top-box-two 
+            max-sm:flex-none max-sm:w-full
+            max-sm:snap-start">
+
+            <!-- محتوای باکس دوم -->
+            <div class="box-content  md:w-full p-[clamp(6px,1.3vw,20px)]">
+                <h2 class="font-semibold  text-white text-[clamp(16px,2.2vw,40px)]" >Easy way to rent <br class=" hidden sm:block"> a car at a low price</h2>
+                <p class="text-white pt-[clamp(13px,1.4vw,25px)] pb-[clamp(17px,1.6vw,25px)] text-[clamp(14px,1.2vw,20px)]">Ease of doing a car rental safely and <br> reliably. Of course at a low price.</p>
+                <a href="Category Car Rent.html">
+                <span class="px-[20px] py-[10px] text-amber-100 text-[16px] rounded-[5px] bg-[#54A6FF]">Rental Car</span>
+                </a>
+            </div>
+            <div class="image-box w-[50%] m-auto mt-4 ">
+            <!-- تصویر باکس اول -->
+            <img class="w-[100%] " src="src/assets/image 8.svg" alt="Car">
+            </div>
+        </div>
+
+    </section>
+    <section
+  class="main-bottom-box w-full bg-[#F6F7F9] py-5 
+         dark:bg-transparent md:py-6"
+>
+  <div
+    class=" flex w-full  flex-col items-center  px-2
+           md:flex-row "
+  >
+
+    <!-- ================= PICK-UP ================= -->
+    <div
+      class="w-full rounded-[10px] bg-white px-4 py-4 shadow-sm  
+             dark:bg-transparent dark:shadow-none
+             md:flex-1 md:px-7 md:py-5"
+    >
+
+      <!-- Title -->
+      <div class="mb-4 flex items-center gap-2">
+        <span
+          class="h-2.5 w-2.5 rounded-full border-[3px]
+                 border-[#D6E4FF] bg-[#377DFF]"
+        ></span>
+
+        <h3 class="text-[16px] font-semibold text-[#1A202C] dark:text-white">
+          Pick-Up
+        </h3>
+      </div>
+
+      <!-- Fields -->
+      <div class="grid grid-cols-3 gap-4 md:gap-[clamp(10px,2vw,30px)]">
+
+        <!-- Locations -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Locations
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                    text-[#90A3BF]
+                   text-[11px]
+                   md:text-[12px]
+                    "
+          >
+            <span class="truncate">Select your city</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Date -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Date
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                   text-[#90A3BF]
+                   text-[11px]
+                   md:text-[12px]
+                   "
+          >
+            <span class="truncate">Select your date</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Time -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Time
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                 text-[#90A3BF]
+                   text-[11px]
+                   md:text-[12px]
+                   "
+                
+          >
+            <span class="truncate">Select your time</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ================= SWAP BUTTON ================= -->
+    <button
+      type="button"
+      aria-label="Swap locations"
+      class="relative z-10 -my-3 flex h-[48px] w-[48px] md:rotate-90
+             shrink-0 items-center justify-center
+             rounded-[10px] bg-[#377DFF] text-white
+             shadow-[0_6px_20px_rgba(55,125,255,0.35)]
+             transition-all duration-200
+             hover:bg-[#2F6FE4]
+             active:scale-95
+             md:mx-3 md:my-0"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M7 4V17M7 4L4 7M7 4L10 7"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+
+        <path
+          d="M17 20V7M17 20L14 17M17 20L20 17"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+
+    <!-- ================= DROP-OFF ================= -->
+    <div
+      class="w-full rounded-[10px] bg-white px-4 py-4 shadow-sm
+             dark:bg-transparent dark:shadow-none
+             md:flex-1 md:px-7 md:py-5"
+    >
+
+      <!-- Title -->
+      <div class="mb-4 flex items-center gap-2">
+        <span
+          class="h-2.5 w-2.5 rounded-full border-[3px]
+                 border-[#D6E4FF] bg-[#54A6FF]"
+        ></span>
+
+        <h3 class="text-[14px] font-semibold text-[#1A202C] dark:text-white">
+          Drop-Off
+        </h3>
+      </div>
+
+      <!-- Fields -->
+      <div class="grid grid-cols-3 gap-4 md:gap-6">
+
+        <!-- Locations -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Locations
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                   text-[11px] text-[#90A3BF]
+                   md:text-[12px]"
+          >
+            <span class="truncate">Select your city</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Date -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Date
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                   text-[11px] text-[#90A3BF]
+                   md:text-[12px]"
+          >
+            <span class="truncate">Select your date</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Time -->
+        <div class="min-w-0">
+          <p class="mb-2 text-[14px] sm:text-[16px] font-bold text-[#1A202C]
+                    dark:text-white md:text-[14px]">
+            Time
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full items-center justify-between gap-1
+                   text-[11px] text-[#90A3BF]
+                   md:text-[12px]"
+          >
+            <span class="truncate">Select your time</span>
+
+            <svg class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+<section class="popular-cars w-full ">
+  <div class="popular-cars-container mx-auto w-full max-w-[1400px]">
+
+    <!-- Section Header -->
+    <div class="mb-6">
+      <h1 class="text-2xl dark:text-white font-bold">
+        Popular Cars 🔥
+      </h1>
+    </div>
+
+
+    <!-- Cars Slider -->
+    <div
+      id="cars-slider"
+      class="flex snap-x snap-mandatory overflow-x-auto
+              scrollbar-none"
+    >
+
+      <!-- Card 1 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Porsche 911
+              </h1>
+
+              <span class="car-type">
+                Sports Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Porsche 911"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/car.svg"
+              alt="Porsche 911"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>2 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Manual</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$90</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Rolls - Royce
+              </h1>
+
+              <span class="car-type">
+                Sedan
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like BMW M4"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car(1).svg"
+              alt="BMW M4"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$120</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Audi R8
+              </h1>
+
+              <span class="car-type">
+                Super Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Audi R8"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car-3.svg"
+              alt="Audi R8"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$150</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Mercedes AMG
+              </h1>
+
+              <span class="car-type">
+                Luxury Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Mercedes AMG"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car-4.svg"
+              alt="Mercedes AMG"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$135</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+            <!-- Card 1 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Porsche 911
+              </h1>
+
+              <span class="car-type">
+                Sports Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Porsche 911"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/car.svg"
+              alt="Porsche 911"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>2 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Manual</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$90</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 2 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Rolls - Royce
+              </h1>
+
+              <span class="car-type">
+                Sedan
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like BMW M4"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car(1).svg"
+              alt="BMW M4"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$120</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 3 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Audi R8
+              </h1>
+
+              <span class="car-type">
+                Super Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Audi R8"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car-3.svg"
+              alt="Audi R8"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$150</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Card 4 -->
+      <div class="car-card">
+
+        <div class="car-card-box">
+
+          <div class="car-header">
+
+            <div class="car-info">
+              <h1 class="car-title">
+                Mercedes AMG
+              </h1>
+
+              <span class="car-type">
+                Luxury Car
+              </span>
+            </div>
+
+            <button
+              type="button"
+              class="like-btn"
+              aria-label="Like Mercedes AMG"
+            >
+              <i class="ri-heart-line"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-image-box">
+            <img
+              src="src/assets/Car-4.svg"
+              alt="Mercedes AMG"
+              class="car-image"
+            >
+          </div>
+
+
+          <div class="car-content">
+
+            <div class="car-features">
+
+              <div class="car-feature">
+                <i class="ri-user-line"></i>
+                <span>4 People</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-steering-2-line"></i>
+                <span>Auto</span>
+              </div>
+
+              <div class="car-feature">
+                <i class="ri-gas-station-line"></i>
+                <span>Petrol</span>
+              </div>
+
+            </div>
+
+
+            <div class="car-bottom">
+
+              <div class="car-price">
+                <h2>$135</h2>
+                <span>/ day</span>
+              </div>
+
+              <button
+                type="button"
+                class="rent-btn"
+              >
+                Rent Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Slider Indicators -->
+    <div
+      id="slider-dots"
+      class="mt-5 flex items-center justify-center gap-2 sm:hidden  "
+      aria-label="Car slider navigation"
+    ></div>
+
+  </div>
+</section>
+
+
+<section class="featured-cars w-full mt-18">
+    <div
+        class="featured-cars-container mx-auto w-full max-w-[1400px]"
+    >
+
+        <!-- Section Header -->
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold dark:text-white">
+                Featured Cars
+            </h1>
+        </div>
+
+
+        <!-- Cars Grid -->
+        <div
+            id="featured-cars-grid"
+            class="grid grid-cols-1 gap-5
+                   sm:grid-cols-2
+                   md:grid-cols-3
+                   lg:grid-cols-4"
+        >
+
+
+            <!-- =========================
+                 Card 1
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Porsche 911
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Sports Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Porsche 911"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/car.svg"
+                                alt="Porsche 911"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>2 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Manual</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$90</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 2
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Rolls - Royce
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Sedan
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Rolls Royce"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car(1).svg"
+                                alt="Rolls Royce"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$120</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 3
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Audi R8
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Super Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Audi R8"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car-3.svg"
+                                alt="Audi R8"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$150</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 4
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Mercedes AMG
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Luxury Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Mercedes AMG"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car-4.svg"
+                                alt="Mercedes AMG"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$135</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 5
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Porsche 911
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Sports Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Porsche 911"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/car.svg"
+                                alt="Porsche 911"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>2 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Manual</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$90</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 6
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Rolls - Royce
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Sedan
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Rolls Royce"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car(1).svg"
+                                alt="Rolls Royce"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$120</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 7
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Audi R8
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Super Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Audi R8"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car-3.svg"
+                                alt="Audi R8"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$150</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 Card 8
+            ========================== -->
+
+            <div class="featured-item">
+
+                <div class="featured-item-box">
+
+                    <div class="featured-item-header">
+
+                        <div class="featured-item-info">
+
+                            <h1 class="featured-item-title">
+                                Mercedes AMG
+                            </h1>
+
+                            <span class="featured-item-type">
+                                Luxury Car
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-like"
+                            aria-label="Like Mercedes AMG"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            <i class="ri-heart-line"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="featured-item-media">
+
+                        <div class="featured-item-image-box">
+
+                            <img
+                                src="src/assets/Car-4.svg"
+                                alt="Mercedes AMG"
+                                class="featured-item-image"
+                            >
+
+                        </div>
+
+
+                        <div class="featured-item-features">
+
+                            <div class="featured-item-feature">
+                                <i class="ri-user-line"></i>
+                                <span>4 People</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-steering-2-line"></i>
+                                <span>Auto</span>
+                            </div>
+
+                            <div class="featured-item-feature">
+                                <i class="ri-gas-station-line"></i>
+                                <span>Petrol</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-item-bottom">
+
+                        <div class="featured-item-price">
+                            <h2>$135</h2>
+                            <span>/ day</span>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="featured-item-rent"
+                            onclick="window.location.href='./Detail-Car-Rent.html'"
+                        >
+                            Rent Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Show More -->
+        <div class="mt-8 flex justify-center ">
+
+            <button
+                id="show-more-featured-cars"
+                type="button"
+                class="rounded-xl bg-bluee
+                       px-6 py-3
+                       font-semibold text-white
+                       transition-all duration-200
+                       hover:bg-bluee/90
+                       active:scale-95"
+            >
+                Show More
+            </button>
+
+        </div>
+
+    </div>
+</section>
+    </div>
+<footer
+  class="w-full bg-white text-[#1A202C] transition-colors duration-300
+         dark:bg-[#0D1321] dark:text-white"
+>
+  <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-11">
+
+    <!-- Main Footer -->
+    <div
+      class="grid grid-cols-1 gap-9 py-10
+             sm:grid-cols-2 sm:gap-x-12
+             lg:grid-cols-[2.5fr_0.8fr_0.8fr_0.8fr]
+             lg:gap-10 lg:py-14"
+    >
+
+      <!-- Brand -->
+      <div class="flex flex-col items-start gap-4">
+        <a
+          href="/"
+          class="text-[26px] font-bold tracking-tight text-[#3563E9]"
+        >
+          MORENT
+        </a>
+
+        <p
+          class="max-w-[300px] text-sm leading-6 text-gray-500
+                 dark:text-gray-400"
+        >
+          Our vision is to provide convenience
+          <br class="hidden sm:block" />
+          and help increase your sales business.
+        </p>
+      </div>
+
+      <!-- About -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">About</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">How it works</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Featured</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Partnership</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Business Relation</a></li>
+        </ul>
+      </div>
+
+      <!-- Community -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">Community</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Events</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Blog</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Podcast</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Invite a friend</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">Socials</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Discord</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Instagram</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Twitter</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="h-px w-full bg-gray-200 dark:bg-slate-700"></div>
+
+    <!-- Bottom Footer -->
+    <div
+      class="flex flex-col gap-6 py-6
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-xs font-medium">
+        ©2022 MORENT. All rights reserved
+      </p>
+
+      <div class="flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium">
+        <a
+          href="#"
+          class="transition-colors hover:text-[#3563E9]"
+        >
+          Privacy &amp; Policy
+        </a>
+
+        <a
+          href="#"
+          class="transition-colors hover:text-[#3563E9]"
+        >
+          Terms &amp; Condition
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

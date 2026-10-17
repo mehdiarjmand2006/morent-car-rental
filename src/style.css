@@ -1,0 +1,302 @@
+    @import "tailwindcss";
+    @custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+    body,
+    body * {
+        transition:
+            background-color 1ms ease-in-out,
+            color 800ms ease-in-out,
+            border-color 600ms ease-in-out,
+            fill 800ms ease-in-out,
+            stroke 800ms ease-in-out;
+    }
+}
+    @theme {
+        --font-ja: "Plus Jakarta Sans", sans-serif;
+        --color-datil: #6B6B6B;
+        --primary-color: #3563E9;
+        --color-bluee: #377DFF;
+    }
+
+
+    .top-box-one {
+        background-image: url(assets/Ads-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        border-radius: 10px;
+
+    }
+    .top-box-two{
+        background-image: url(assets/Ads-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        border-radius: 10px;
+
+
+    }
+    @layer components {
+
+        /* =========================
+        Car Card
+        ========================= */
+
+        .filter-item{
+            @apply text-[clamp(13px,1vw,20px)]
+             text-black dark:text-white
+             font-ja
+
+        }
+        .car-card {
+            @apply w-full shrink-0 snap-start px-2
+                sm:w-1/2
+                md:w-1/3
+                lg:w-1/4;
+        }
+
+        .car-card-box {
+            @apply h-full rounded-2xl bg-white p-4
+            dark:bg-transparent;
+        }
+
+        /* =========================
+        Header
+        ========================= */
+
+        .car-header {
+            @apply mb-4 flex items-start justify-between;
+        }
+
+        .car-info {
+            @apply flex flex-col;
+        }
+
+        .car-title {
+            @apply text-[clamp(16px,1.38vw,30px)] 
+    dark:text-white font-bold;
+        }
+
+        .car-type {
+            @apply text-[clamp(14px,1.18vw,30px)] text-[#90A3BF];
+        }
+
+        .like-btn {
+            @apply flex h-10 w-10 items-center justify-center;
+        }
+
+        .like-btn i {
+            @apply text-xl transition-colors dark:text-amber-50  duration-200;
+        }
+
+
+        /* =========================
+        Image
+        ========================= */
+
+        .car-image-box {
+            @apply mb-5 flex h-[190px] w-full
+                items-center justify-center
+                overflow-hidden;
+        }
+
+        .car-image {
+            @apply h-full w-[80%]
+                object-contain
+                object-center;
+        }
+
+
+        /* =========================
+        Content
+        ========================= */
+
+        .car-content {
+            @apply w-full;
+        }
+
+
+        /* =========================
+        Features
+        ========================= */
+
+        .car-features {
+            @apply mb-5 flex items-center justify-between
+                text-[clamp(12px,1vw,20px)] text-[#90A3BF];
+        }
+
+        .car-feature {
+            @apply flex items-center gap-2;
+        }
+
+
+        /* =========================
+        Bottom
+        ========================= */
+
+        .car-bottom {
+            @apply flex items-center justify-between;
+        }
+
+        .car-price {
+            @apply flex items-baseline gap-1;
+        }
+
+        .car-price h2 {
+            @apply text-[clamp(16px,1.38vw,30px)]
+            font-bold  dark:text-white     
+            ;
+            
+        }
+
+        .car-price span {
+            @apply text-[clamp(12px,1vw,20px)]
+        dark:text-white
+            text-[#90A3BF];
+        }
+
+        .rent-btn {
+            @apply rounded-xl bg-bluee
+                px-5 py-3
+                font-semibold text-white
+                transition-all duration-200
+                hover:bg-bluee/90
+                active:scale-95;
+        }
+
+
+        /* =========================
+        Slider Dots
+        ========================= */
+
+        .slider-dot {
+            @apply h-2 w-2 rounded-full
+                bg-datil/30
+                transition-all duration-300;
+        }
+
+        .slider-dot.active {
+            @apply w-5 bg-bluee;
+        }
+    }
+    @layer components {
+
+    .featured-item {
+        @apply w-full;
+    }
+
+    .featured-item-box {
+        @apply h-full rounded-2xl bg-white p-4
+               dark:bg-transparent;
+    }
+
+
+    /* Header */
+
+    .featured-item-header {
+        @apply mb-4 flex items-start justify-between;
+    }
+
+    .featured-item-info {
+        @apply flex flex-col;
+    }
+
+    .featured-item-title {
+        @apply text-[clamp(16px,1.38vw,30px)]
+               font-bold
+               dark:text-white;
+    }
+
+    .featured-item-type {
+        @apply text-[clamp(14px,1.18vw,30px)]
+               text-[#90A3BF];
+    }
+
+    .featured-item-like {
+        @apply flex h-10 w-10 shrink-0
+               items-center justify-center;
+    }
+
+    .featured-item-like i {
+        @apply text-xl
+               transition-colors duration-200
+               dark:text-white;
+    }
+
+
+    /* Image + Features */
+
+    .featured-item-media {
+        @apply flex flex-row items-center gap-4
+               md:flex-col md:gap-0;
+    }
+
+
+    /* Image */
+
+    .featured-item-image-box {
+        @apply flex h-[150px] w-[55%] shrink-0
+               items-center justify-center
+               overflow-hidden
+
+               md:mb-5 md:h-[190px] md:w-full;
+    }
+
+    .featured-item-image {
+        @apply h-full w-full
+               object-contain object-center
+
+               md:w-[80%];
+    }
+
+
+    /* Features */
+.featured-item-features {
+    @apply flex w-full flex-col
+           items-center justify-center
+           gap-3
+           text-[clamp(12px,1vw,20px)]
+           text-[#90A3BF]
+           md:mb-5
+           md:flex-row
+           md:justify-between
+           md:gap-0;
+}
+
+.featured-item-feature {
+    @apply flex w-fit items-center justify-center gap-2
+           md:w-auto;
+}
+
+    /* Bottom */
+
+    .featured-item-bottom {
+        @apply flex items-center justify-between;
+    }
+
+    .featured-item-price {
+        @apply flex items-baseline gap-1;
+    }
+
+    .featured-item-price h2 {
+        @apply text-[clamp(16px,1.38vw,30px)]
+               font-bold
+               dark:text-white;
+    }
+
+    .featured-item-price span {
+        @apply text-[clamp(12px,1vw,20px)]
+               text-[#90A3BF]
+               dark:text-white;
+    }
+
+    .featured-item-rent {
+        @apply rounded-xl bg-bluee
+               px-5 py-3
+               font-semibold text-white
+               transition-all duration-200
+               hover:bg-bluee/90
+               active:scale-95;
+    }
+    
+}

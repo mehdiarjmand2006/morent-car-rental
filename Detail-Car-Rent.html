@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>my-project</title>
+  </head>
+<body class="bg-[#FCFCFD] dark:bg-black font-font-ja">
+<div class="continer w-[92%] md:w-[92%] lg:w-[91%] mx-auto">
+<header class="site-header w-full mt-4">
+  <nav class="nav flex flex-col-reverse  sm:flex-row sm:justify-between">
+    <div class="nav-left  w-full  sm:w-2/4 sm:flex-row flex sm:items-center gap-x-[clamp(12px,3vw,40px)] gap-y-4 flex-col  ">
+      <div class="navbar-logo">
+                <span id="theme-toggle" class="navbar-logo-text 
+                 font-font-ja text-blue-500 text-[clamp(26px,2.2vw,40px)] font-bold
+                 cursor-pointer
+                 ">MORENT</span>
+            </div>
+             <div class="navbar-search flex w-full ">
+
+                <!-- ورودی جست‌وجو -->
+                <input
+                    type="search"
+                    class="navbar-search-input w-[80%] sm:w-[clamp(300px,28vw,550px)]
+                    rounded-[30px] border border-transparent 
+                    bg-gray-100 px-4 py-1.5 pr-10
+                    text-gray-900 outline-none
+                    transition-all duration-300 ease-in-out
+                    focus:bg-white
+                    focus:border-gray-400
+                    focus:ring-3 focus:ring-gray-200/70
+                    focus:shadow-md
+                    dark:bg-white/5 dark:text-white
+                    dark:focus:bg-white/10
+                    dark:focus:border-white/15
+                    dark:focus:ring-white/10
+                    dark:focus:shadow-lg dark:focus:shadow-black/10"
+                    placeholder="Search..."
+                >
+                <div class=" filter-bar md:hidden 
+                flex
+                w-[20%]"></div>
+                <i  id="filter-toggle" class="ri-equalizer-2-line md:hidden 
+                 text-[24px]
+                 dark:text-amber-50" ></i>
+            </div>
+    </div>
+    <div class="nav-right flex flex-row gap-4 justify-between">
+
+        <i class="ri-menu-line dark:text-[##FCFCFD] text-[28px]  sm:hidden "></i>
+        <div class="group-i gap-8 flex items-center">
+            <!-- آیکون علاقه‌مندی‌ها -->
+            <i class="ri-heart-fill hidden md:block text-[26px] text-[#596780]"></i>
+
+            <!-- آیکون اعلان‌ها -->
+            <i class="ri-notification-fill hidden md:block text-[26px] text-[#596780]"></i>
+
+            <!-- آیکون تنظیمات -->
+            <i class="ri-settings-4-fill hidden md:block text-[26px] text-[#596780]"></i>
+          </div>
+            <!-- تصویر پروفایل -->
+            <img
+                src="src/assets/Image.svg"
+                alt="Profile"
+                class="navbar-profile-image w-[clamp(35px,3vw,100px)]"
+            >
+        </div>
+        </nav>
+      </header>
+      <main class="relative flex w-full">
+        <article
+    id="filter-sidebar"
+    class="
+        right
+        fixed left-0 top-0 z-50
+        h-screen w-[50%]
+        
+        -translate-x-full
+        bg-[#8F98A5]/80
+         backdrop-blur-2xl
+         shadow-[0_8px_32px_rgba(60,70,85,0.15)]
+        dark:bg-white/[0.08]
+        dark:border-white/[0.12]
+        dark:shadow-[0_8px_32px_rgba(0,0,0,0.3)]
+        md:bg-transparent
+        md:backdrop-blur-none
+        md:border-transparent
+        md:shadow-none
+        dark:md:bg-transparent
+        transition-transform duration-700 ease-in-out
+
+        md:static
+        md:h-auto
+        md:w-1/4
+        md:translate-x-0
+        md:shrink-0
+    "
+>
+        <section class="filter-bar h-full w-full overflow-y-auto p-5">
+
+            <!-- TYPE -->
+            <div class="mb-8">
+                <h3
+                    class="mb-4 text-[12px] font-semibold uppercase
+                           tracking-[0.15em] text-[#768499]"
+                >
+                    Type
+                </h3>
+
+                <div class="flex flex-col gap-4">
+
+                    <label class="filter-item">
+                        <input type="checkbox" checked>
+                        <span>Sport <small>(10)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox" checked>
+                        <span>SUV <small>(12)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>MPV <small>(16)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>Sedan <small>(20)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>Coupe <small>(14)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>Hatchback <small>(14)</small></span>
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- CAPACITY -->
+            <div class="mb-8">
+
+                <h3
+                    class="mb-4 text-[12px] font-semibold uppercase
+                           tracking-[0.15em] text-[#657287]"
+                >
+                    Capacity
+                </h3>
+
+                <div class="flex flex-col gap-4">
+
+                    <label class="filter-item">
+                        <input type="checkbox" checked>
+                        <span>2 Person <small>(10)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>4 Person <small>(14)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox">
+                        <span>6 Person <small>(12)</small></span>
+                    </label>
+
+                    <label class="filter-item">
+                        <input type="checkbox" checked>
+                        <span>8 or More <small>(16)</small></span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRICE -->
+            <div>
+
+                <h3
+                    class="mb-4 text-[12px] font-semibold uppercase
+                           tracking-[0.15em] text-[#90A3BF]"
+                >
+                    Price
+                </h3>
+
+                <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="70"
+                    class="w-full accent-[#377DFF]"
+                >
+
+                <p
+                    class="mt-3 text-[14px] font-semibold
+                           text-[#596780] dark:text-[#90A3BF]"
+                >
+                    Max. $100.00
+                </p>
+
+            </div>
+
+        </section>
+        </article>
+
+
+
+
+
+
+
+
+       <article class="w-full min-w-0">
+
+  <!-- Top Section -->
+<section class="top-section w-full min-w-0 px-4 py-6 md:px-8">
+
+  <!-- TOP -->
+  <div
+    class="top flex w-full min-w-0 flex-col gap-6
+           md:flex-row"
+  >
+
+    <!-- LEFT : CAR GALLERY -->
+    <div
+      class="top-left w-full min-w-0
+             md:w-2/4"
+    >
+
+      <!-- BIG IMAGE -->
+      <div
+        class="relative flex aspect-[16/10] w-full items-center justify-center
+               overflow-hidden rounded-xl   "
+      >
+        <img
+          id="main-car-image"
+          src="src/assets/car.svg"
+          alt="Nissan GT-R"
+          class="h-full w-full  transition-all duration-300 object-contain object-center"
+        >
+      </div>
+
+
+      <!-- SMALL IMAGES -->
+      <div class="mt-3 grid grid-cols-3 gap-3">
+
+        <button
+          type="button"
+          class="gallery-item overflow-hidden rounded-lg border-2 border-[#3563E9] p-1"
+          data-image="src/assets/car.svg"
+        >
+          <img
+            src="src/assets/car.svg"
+            alt="Car exterior"
+            class="aspect-[16/10] h-full  rounded-md "
+          >
+        </button>
+
+
+        <button
+          type="button"
+          class="gallery-item overflow-hidden rounded-lg border-2 border-transparent p-1"
+          data-image="src/assets/View 2.svg"
+        >
+          <img
+            src="src/assets/View 2.svg"
+            alt="Car interior"
+            class="aspect-[16/10] h-full w-full rounded-md object-cover"
+          >
+        </button>
+
+
+        <button
+          type="button"
+          class="gallery-item overflow-hidden rounded-lg border-2 border-transparent p-1"
+          data-image="src/assets/View 3.svg"
+        >
+          <img
+            src="src/assets/View 3.svg"
+            alt="Car seats"
+            class="aspect-[16/10] h-full w-full rounded-md object-cover"
+          >
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT : CAR INFORMATION -->
+    <div
+      class="top-right flex w-full min-w-0 flex-col rounded-xl
+             bg-white p-4
+             dark:bg-transparent
+             md:w-2/4 md:p-3"
+    >
+
+      <!-- HEADER -->
+      <div class="flex items-start justify-between gap-x-4">
+
+        <div>
+          <h1
+            class="text-[clamp(20px,2.3vw,40px)] font-bold text-[#1A202C]
+                   dark:text-white"
+          >
+            Nissan GT - R
+          </h1>
+
+          <div class=" flex flex-wrap items-center ">
+
+            <div class="flex text-lg text-[#FBAD39]">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-line text-[#90A3BF]"></i>
+            </div>
+
+            <span class="text-[13px] text-[#596780] dark:text-gray-400">
+              440+ Reviewer
+            </span>
+
+          </div>
+        </div>
+
+
+        <!-- HEART -->
+        <button
+          id="car-like"
+          type="button"
+          class="text-2xl text-red-500 transition-transform
+                 hover:scale-110"
+          aria-label="Like car"
+        >
+          <i class="ri-heart-fill"></i>
+        </button>
+
+      </div>
+
+
+      <!-- DESCRIPTION -->
+      <p
+        class="mt-[clamp(1px,2.2vw,36px)] md:text-[clamp(13px,1.4vw,25px)]  text-[#596780]
+               dark:text-gray-300 text-base 
+            "
+      >
+        NISMO has become the embodiment of Nissan's outstanding
+        performance, inspired by the most unforgiving proving ground,
+      </p>
+
+
+      <!-- DETAILS -->
+      <div
+        class="mt-3 grid grid-cols-2 gap-x-5 gap-y-3
+                text-[13px] md:text-[clamp(12px,1.4vw,30px)]"
+      >
+
+        <div class="flex justify-between gap-3">
+          <span class="text-[#90A3BF]">
+            Type Car
+          </span>
+
+          <span class="font-semibold text-[#596780] dark:text-gray-200">
+            Sport
+          </span>
+        </div>
+
+
+        <div class="flex justify-between gap-3">
+          <span class="text-[#90A3BF]">
+            Capacity
+          </span>
+
+          <span class="font-semibold text-[#596780] dark:text-gray-200">
+            2 Person
+          </span>
+        </div>
+
+
+        <div class="flex justify-between gap-3">
+          <span class="text-[#90A3BF]">
+            Steering
+          </span>
+
+          <span class="font-semibold text-[#596780] dark:text-gray-200">
+            Manual
+          </span>
+        </div>
+
+
+        <div class="flex justify-between gap-3">
+          <span class="text-[#90A3BF]">
+            Gasoline
+          </span>
+
+          <span class="font-semibold text-[#596780] dark:text-gray-200">
+            70L
+          </span>
+        </div>
+
+      </div>
+
+
+      <!-- PRICE + BUTTON -->
+      <div
+        class="mt-auto flex items-end justify-between gap-x-4 pt-5"
+      >
+
+        <div>
+          <div class="flex items-end">
+            <h2
+              class="text-[clamp(18px,1.9vw,30px)] font-bold
+                     text-[#1A202C] dark:text-white"
+            >
+              $80.00/
+            </h2>
+
+            <span class="mb-1 text-sm font-semibold text-[#90A3BF] text-[clamp(12px,1.2vw,30px)]">
+              days
+            </span>
+          </div>
+
+          <span
+            class="text-sm font-semibold text-[#90A3BF] line-through text-[clamp(12px,1.2vw,30px)]"
+          >
+            $100.00
+          </span>
+        </div>
+
+
+        <button
+          class="shrink-0 rounded-md bg-[#3563E9]
+                 px-5 py-3 text-sm font-semibold text-white
+                 transition hover:bg-[#274fc7]
+                 sm:px-7 sm:py-4"
+        >
+          Rent Now
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- BOTTOM : COMMENTS -->
+  <div
+    class="bottom mt-8 w-full min-w-0"
+  >
+    <!-- Container اصلی -->
+<div class="max-w-full mx-auto p-4 sm:p-6 bg-whie  text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    
+    <!-- هدر بخش نظرات -->
+    <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Reviews</h2>
+        <span class="bg-blue-600 text-white text-sm font-semibold px-2.5 py-0.5 rounded-md">
+            13
+        </span>
+    </div>
+
+    <!-- لیست نظرات -->
+    <div class="space-y-8">
+
+        <!-- نظر اول (Alex Stanton) -->
+        <div class="border-b border-gray-100 dark:border-gray-800 pb-8">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                
+                <!-- بخش پروفایل و نام -->
+                <div class="flex items-start gap-4">
+                    <img src="src/assets/Image.svg" alt="Alex Stanton" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h3 class="text-[clamp(12px,1vw,20px)] font-bold text-gray-900 dark:text-white">Alex Stanton</h3>
+                        <p class="text-[13px] text-gray-500 dark:text-gray-400">CEO at Bukalapak</p>
+                    </div>
+                </div>
+
+                <!-- بخش تاریخ و ستاره‌ها -->
+                <div class="flex flex-col items-start sm:items-end gap-1">
+                    <span class="text-sm text-gray-400 dark:text-gray-500">21 July 2022</span>
+                    <div class="flex text-yellow-400">
+                        <!-- 4 ستاره پر و 1 خالی -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <svg class="w-5 h-5 fill-current text-gray-300 dark:text-gray-600" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- متن نظر -->
+            <p class="mt-4 text-gray-600 dark:text-gray-300 text-[13px]  leading-relaxed">
+                We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+            </p>
+        </div>
+
+        <!-- نظر دوم (Skylar Dias) -->
+        <div class="border-b border-gray-100 dark:border-gray-800 pb-8">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                
+                <!-- بخش پروفایل و نام -->
+                <div class="flex items-start gap-4">
+                    <img src="https://i.pravatar.cc/150?u=skylar" alt="Skylar Dias" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h3 class="text-[clamp(12px,1vw,20px)] font-bold text-gray-900 dark:text-white">Skylar Dias</h3>
+                        <p class="text-[13px] text-gray-500 dark:text-gray-400">CEO at Amazon</p>
+                    </div>
+                </div>
+
+                <!-- بخش تاریخ و ستاره‌ها -->
+                <div class="flex flex-col items-start sm:items-end gap-1">
+                    <span class="text-sm text-gray-400 dark:text-gray-500">20 July 2022</span>
+                    <div class="flex text-yellow-400">
+                         <!-- 4 ستاره پر و 1 خالی -->
+                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                         <svg class="w-5 h-5 fill-current text-gray-300 dark:text-gray-600" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- متن نظر -->
+            <p class="mt-4 text-gray-600 dark:text-gray-300 text-[13px] leading-relaxed">
+                We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- دکمه Show All -->
+    <div class="mt-8 text-center">
+        <button class="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer group">
+            Show All
+            <svg class="w-4 h-4 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+    </div>
+
+</div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bottom Section -->
+  <section class="bottom-section w-full min-w-0">
+    <section class="popular-cars w-full min-w-0">
+
+      <div class="popular-cars-container mx-auto w-full min-w-0 max-w-[1400px]">
+
+
+        <!-- Cars Slider -->
+        <div
+          id="cars-slider"
+          class="flex w-full min-w-0 snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain scrollbar-none"
+        >
+
+          <!-- Car 1 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Porsche 911</h3>
+                  <span class="car-type">Sports Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Porsche 911">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/car.svg" alt="Porsche 911" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>2 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Manual</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$90</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 2 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Rolls - Royce</h3>
+                  <span class="car-type">Sedan</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Rolls Royce">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car(1).svg" alt="Rolls Royce" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$120</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn"onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 3 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Audi R8</h3>
+                  <span class="car-type">Super Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Audi R8">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car-3.svg" alt="Audi R8" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$150</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Mercedes AMG</h3>
+                  <span class="car-type">Luxury Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Mercedes AMG">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car-4.svg" alt="Mercedes AMG" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$135</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section class="popular-cars w-full min-w-0">
+
+      <div class="popular-cars-container mx-auto w-full min-w-0 max-w-[1400px]">
+
+
+        <!-- Cars Slider -->
+        <div
+          id="cars-slider"
+          class="flex w-full min-w-0 snap-x snap-mandatory gap-5 overflow-x-auto overscroll-x-contain scrollbar-none"
+        >
+
+          <!-- Car 1 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Porsche 911</h3>
+                  <span class="car-type">Sports Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Porsche 911">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/car.svg" alt="Porsche 911" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>2 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Manual</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$90</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 2 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Rolls - Royce</h3>
+                  <span class="car-type">Sedan</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Rolls Royce">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car(1).svg" alt="Rolls Royce" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$120</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 3 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Audi R8</h3>
+                  <span class="car-type">Super Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Audi R8">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car-3.svg" alt="Audi R8" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$150</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="car-card w-[85%] min-w-0 shrink-0 snap-start sm:w-[48%] lg:w-[32%]">
+            <div class="car-card-box">
+
+              <div class="car-header">
+                <div class="car-info">
+                  <h3 class="car-title">Mercedes AMG</h3>
+                  <span class="car-type">Luxury Car</span>
+                </div>
+
+                <button type="button" class="like-btn" aria-label="Like Mercedes AMG">
+                  <i class="ri-heart-line"></i>
+                </button>
+              </div>
+
+              <div class="car-image-box">
+                <img src="src/assets/Car-4.svg" alt="Mercedes AMG" class="car-image">
+              </div>
+
+              <div class="car-content">
+                <div class="car-features">
+                  <div class="car-feature">
+                    <i class="ri-user-line"></i>
+                    <span>4 People</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-steering-2-line"></i>
+                    <span>Auto</span>
+                  </div>
+
+                  <div class="car-feature">
+                    <i class="ri-gas-station-line"></i>
+                    <span>Petrol</span>
+                  </div>
+                </div>
+
+                <div class="car-bottom">
+                  <div class="car-price">
+                    <h2>$135</h2>
+                    <span>/ day</span>
+                  </div>
+
+                  <button type="button" class="rent-btn" onclick="window.location.href='./Detail-Car-Rent.html'">Rent Now</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </section>
+      </article>
+      </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    <footer
+  class="w-full bg-white text-[#1A202C] transition-colors duration-300
+         dark:bg-[#0D1321] dark:text-white"
+>
+  <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-11">
+
+    <!-- Main Footer -->
+    <div
+      class="grid grid-cols-1 gap-9 py-10
+             sm:grid-cols-2 sm:gap-x-12
+             lg:grid-cols-[2.5fr_0.8fr_0.8fr_0.8fr]
+             lg:gap-10 lg:py-14"
+    >
+
+      <!-- Brand -->
+      <div class="flex flex-col items-start gap-4">
+        <a
+          href="/"
+          class="text-[26px] font-bold tracking-tight text-[#3563E9]"
+        >
+          MORENT
+        </a>
+
+        <p
+          class="max-w-[300px] text-sm leading-6 text-gray-500
+                 dark:text-gray-400"
+        >
+          Our vision is to provide convenience
+          <br class="hidden sm:block" />
+          and help increase your sales business.
+        </p>
+      </div>
+
+      <!-- About -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">About</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">How it works</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Featured</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Partnership</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Business Relation</a></li>
+        </ul>
+      </div>
+
+      <!-- Community -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">Community</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Events</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Blog</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Podcast</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Invite a friend</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <h3 class="mb-5 text-base font-semibold">Socials</h3>
+
+        <ul class="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Discord</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Instagram</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Twitter</a></li>
+          <li><a href="#" class="transition-colors hover:text-[#3563E9]">Facebook</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="h-px w-full bg-gray-200 dark:bg-slate-700"></div>
+
+    <!-- Bottom Footer -->
+    <div
+      class="flex flex-col gap-6 py-6
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-xs font-medium">
+        ©2022 MORENT. All rights reserved
+      </p>
+
+      <div class="flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium">
+        <a
+          href="#"
+          class="transition-colors hover:text-[#3563E9]"
+        >
+          Privacy &amp; Policy
+        </a>
+
+        <a
+          href="#"
+          class="transition-colors hover:text-[#3563E9]"
+        >
+          Terms &amp; Condition
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
